@@ -78,7 +78,7 @@ export default function App() {
             fontSize: "clamp(1.2rem, 4vw, 2.2rem)",
             borderRadius: "2rem",
             boxShadow: "0 2px 12px #0001",
-            width: "min(400px, 90vw)",
+            width: "min(300px, 80vw)",
             height: "3.5rem",
             margin: "0 auto 32px auto",
             border: "2px solid #0091ea",
