@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import image from "./national.jpg";
-import logo from "./logo.png";
 
 const CARD_IMG = image;
 const CANVAS_WIDTH = 2000;
@@ -37,7 +36,6 @@ export default function App() {
         lines = [name];
       }
 
-      // Center text within the black square
       const centerX = NAME_BOX.x + NAME_BOX.w / 2;
       const centerY = NAME_BOX.y + NAME_BOX.h / 2;
 
@@ -77,15 +75,16 @@ export default function App() {
             direction: "rtl",
             textAlign: "center",
             fontWeight: "bold",
-            fontSize: "2.2rem",
+            fontSize: "clamp(1.2rem, 4vw, 2.2rem)",
             borderRadius: "2rem",
             boxShadow: "0 2px 12px #0001",
-            width: 400,
+            width: "min(400px, 90vw)",
             height: "3.5rem",
             margin: "0 auto 32px auto",
             border: "2px solid #0091ea",
             outline: "none",
             transition: "border 0.2s",
+            padding: "0 20px",
           }}
         />
       </div>
